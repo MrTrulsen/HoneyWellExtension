@@ -38,9 +38,9 @@ public abstract class HoneywellScanner implements ScannerCallBack
     // }
 
     @Override
-    public void onDecoded(String code, HashMap<String, Object> extras)
+    public void onDecoded(String code, String charset)
     {
-        if(scannerCallBack != null) scannerCallBack.onDecoded(code, extras);
+        if(scannerCallBack != null) scannerCallBack.onDecoded(code, charset);
     }
 
 

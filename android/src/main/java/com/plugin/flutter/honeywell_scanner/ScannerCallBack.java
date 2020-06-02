@@ -30,5 +30,5 @@ public interface ScannerCallBack
      * @see Activity#runOnUiThread(Runnable)
      */
     void onError(Exception error);
-    void onDecoded(String code, HashMap<String, Object> extras);
+    void onDecoded(String code, String charset);
 }

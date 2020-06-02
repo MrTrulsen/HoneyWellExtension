@@ -52,8 +52,8 @@ class HoneywellScanner {
   ///Note that this method always called on a worker thread
   ///
   ///@param code Encapsulates the result of decoding a barcode within an image
-  void onDecoded(String code, String codeId) {
-    if(_scannerCallBack != null) _scannerCallBack.onDecoded(code, codeId);
+  void onDecoded(String code, String charset) {
+    if(_scannerCallBack != null) _scannerCallBack.onDecoded(code, charset);
   }
 
   ///Called when error has occurred

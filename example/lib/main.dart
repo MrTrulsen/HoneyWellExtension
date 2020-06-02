@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> implements ScannerCallBack{
   }
 
   @override
-  void onDecoded(String result) {
+  void onDecoded(String result, String charset) {
     setState(() {
       _scannedCode = result;
     });

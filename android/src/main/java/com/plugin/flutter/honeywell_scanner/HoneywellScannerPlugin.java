@@ -116,11 +116,11 @@ public class HoneywellScannerPlugin implements MethodCallHandler, ScannerCallBac
      */
     @Override
     //@optionalTypeArgs
-    public void onDecoded(final String code, final HashMap<String, Object> extras)
+    public void onDecoded(final String code, final String charset)
     {
         ArrayList<Object> list = new ArrayList();
         list.add(code);
-        list.add(extras);
+        list.add(charset);
         handler.post(() -> channel.invokeMethod(_ON_DECODED,list));
     }
 
