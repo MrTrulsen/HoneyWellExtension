@@ -3,6 +3,8 @@ package com.plugin.flutter.honeywell_scanner;
 import android.content.Context;
 import android.os.Handler;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import io.flutter.plugin.common.MethodCall;
@@ -113,9 +115,12 @@ public class HoneywellScannerPlugin implements MethodCallHandler, ScannerCallBac
      */
     @Override
     @optionalTypeArgs
-    public void onDecoded(final String code, final String CodeId)
+    public void onDecoded(final String code, final String codeId)
     {
-        handler.post(() -> channel.invokeMethod(_ON_DECODED, [code, CodeId]));
+        ArrayList<String> list = new ArrayList();
+        list.add(code);
+        list.add(codeId);
+        handler.post(() -> channel.invokeMethod(_ON_DECODED,list));
     }
 
     /**

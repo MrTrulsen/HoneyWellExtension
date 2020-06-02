@@ -16,6 +16,7 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+
 /**
  * The android project which is going to use this plugin library should define flatDir in its
  * gradle allProjects closure, exactly as below
