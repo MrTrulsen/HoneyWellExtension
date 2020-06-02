@@ -31,7 +31,7 @@ class HoneywellScanner {
     try {
       switch (call.method) {
         case _ON_DECODED:
-          onDecoded(call.arguments);
+          onDecoded(call.arguments,"");
           break;
         case _ON_ERROR:
           onError(Exception(call.arguments));
