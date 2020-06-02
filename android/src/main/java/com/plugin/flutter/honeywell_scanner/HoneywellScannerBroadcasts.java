@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 
 import java.util.Map;
+import java.util.HashMap;
 
 /**
  * Created by luis901101 on 05/30/19.

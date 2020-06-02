@@ -2,6 +2,7 @@ package com.plugin.flutter.honeywell_scanner;
 
 import android.app.Activity;
 import android.os.Handler;
+import java.util.HashMap;
 
 /**
  * Created by krrigan on 5/31/19.
