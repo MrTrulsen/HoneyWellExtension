@@ -117,11 +117,11 @@ public class HoneywellScannerBroadcasts extends HoneywellScanner
                             byte[] dataBytes = intent.getByteArrayExtra("dataBytes");
                             //                            String dataBytesStr = bytesToHexString(dataBytes);
                             String timestamp = intent.getStringExtra("timestamp");
-                            extras.add("aimId", aimId);
-                            extras.add("charset", charset);
-                            extras.add("codeId", codeId);
-                            extras.add("dataBytes", dataBytes);
-                            extras.add("timestamp", timestamp);
+                            extras.put("aimId", aimId);
+                            extras.put("charset", charset);
+                            extras.put("codeId", codeId);
+                            extras.put("dataBytes", dataBytes);
+                            extras.put("timestamp", timestamp);
                             onDecoded(data, extras);
                         }
                         break;
