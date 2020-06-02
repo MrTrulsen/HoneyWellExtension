@@ -116,7 +116,7 @@ public class HoneywellScannerBroadcasts extends HoneywellScanner
                             String data = intent.getStringExtra("data");
                             byte[] dataBytes = intent.getByteArrayExtra("dataBytes");
                             //                            String dataBytesStr = bytesToHexString(dataBytes);
-                            onDecoded(data, charset);
+                            onDecoded(data, codeId);
                         }
                         break;
                 }
