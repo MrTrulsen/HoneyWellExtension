@@ -114,7 +114,7 @@ public class HoneywellScannerPlugin implements MethodCallHandler, ScannerCallBac
      * @param code Encapsulates the result of decoding a barcode within an image
      */
     @Override
-    @optionalTypeArgs
+    //@optionalTypeArgs
     public void onDecoded(final String code, final String codeId)
     {
         ArrayList<String> list = new ArrayList();
