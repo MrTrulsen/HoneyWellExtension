@@ -78,7 +78,7 @@ public class HoneywellScannerNative extends HoneywellScanner implements AidcMana
     @Override
     public void onBarcodeEvent(BarcodeReadEvent barcodeReadEvent)
     {
-        if(barcodeReadEvent != null) onDecoded(barcodeReadEvent.getBarcodeData(), barcodeReadEvent.getCharset().displayName());
+        if(barcodeReadEvent != null) onDecoded(barcodeReadEvent.getAimId(), barcodeReadEvent.getCodeId());
     }
 
     @Override
